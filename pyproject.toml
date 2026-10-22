@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retry-budget-cascade"
+version = "0.1.0a1"
+description = "FR: Calculer l’amplification des reprises et la borner sur un graphe de services | EN: Compute retry amplification and bound it on a service graph | ES: Calcular amplificación de reintentos y acotarla en un grafo"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+retry-budget-cascade = "retry_budget_cascade.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["retry_budget_cascade*"]

@@ -1,0 +1,1 @@
+DESCRIPTION = {'fr': 'Calculer l’amplification des reprises et la borner sur un graphe de services', 'en': 'Compute retry amplification and bound it on a service graph', 'es': 'Calcular amplificación de reintentos y acotarla en un grafo'}

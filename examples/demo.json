@@ -1,0 +1,30 @@
+{
+  "root": "api",
+  "requests": 1,
+  "shared_budget": 20,
+  "services": [
+    {
+      "id": "api",
+      "attempts": 3,
+      "calls": [
+        {
+          "service": "worker"
+        }
+      ]
+    },
+    {
+      "id": "worker",
+      "attempts": 4,
+      "calls": [
+        {
+          "service": "db",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "db",
+      "attempts": 5
+    }
+  ]
+}
